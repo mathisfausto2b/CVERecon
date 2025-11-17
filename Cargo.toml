@@ -1,0 +1,18 @@
+[package]
+name = "cverecon"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+tokio = { version = "1", features = ["full"] }
+scraper = "0.13"
+regex = "1"
+colored = "2"
+prettytable = "0.10.0"
+trust-dns-resolver = { version = "0.22", features = ["tokio-runtime"] }
+textwrap = "0.16"
+terminal_size = "0.1"
+url = "2"
